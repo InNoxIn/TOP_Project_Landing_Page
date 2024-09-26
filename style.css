@@ -1,3 +1,4 @@
+/* General reset and base styles */
 * {
     box-sizing: border-box;
     margin: 0;
@@ -25,11 +26,6 @@ a {
     margin: 5px;
 }
 
-.links {
-    display: flex;
-    flex-direction: column;
-}
-
 .hero {
     color: #F9FAF8;
     display: flex;
@@ -37,21 +33,18 @@ a {
     justify-content: space-between;    
     height: 300px;
     margin-top: 5rem;
-    
 }
 
 p {
-    /* padding: 5px;
-    margin: 5px; */
     font-size: 18px;
-    color: #E5E7EB
+    color: #E5E7EB;
 }
 
 button {
     background-color: #3882f6;
     padding: 10px;
     margin-top: 5px;
-    color: #E5E7EB
+    color: #E5E7EB;
 }
 
 h1 {
@@ -74,6 +67,7 @@ h1 {
     padding: 6rem;
     align-items: center;
     display: flex;
+    max-width: 50%;
 }
 
 .container {
@@ -88,22 +82,38 @@ h2 {
     font-size: 3rem;
 }
 
+/* Updated .boxes container styling */
 .boxes {
     display: flex;
+    justify-content: space-around;
+    text-align: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+/* .box-group styling for each box and its paragraph */
+.box-group {
+    display: flex;
+    flex-direction: column; /* Stack the box and subtext vertically */
+    align-items: center; /* Center the content */
 }
 
 .box {
-    border-radius: 2px;
+    border-radius: 25px;
     border-style: solid;
     border-color: blue;
     width: 200px;
     height: 200px;
-    justify-content: space-around;
-    margin: 0 auto;
-    border-radius: 25px;
-    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px; /* Space between the box and subtext */
 }
 
+/* Subtext styling */
 .subtext {
     color: black;
+    width: 200px; /* Match the width of the box */
+    text-align: center;
+    margin-top: 10px;
 }
