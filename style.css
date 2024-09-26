@@ -16,8 +16,6 @@
 .navbar {
     display: flex;
     justify-content: space-between;
-    padding: 20px;
-    margin: 20 0;
 }
 
 a {
@@ -34,26 +32,32 @@ a {
 
 .hero {
     color: #F9FAF8;
-    padding: 20px;
-    margin-top: 10px;
     display: flex;
     align-items: center;
     justify-content: space-between;    
     height: 300px;
+    
 }
 
 .sign-up {
     flex-direction: column;
-    flex-grow: 1;
+    flex-basis: 100%;
+
 }
 
 .placeholder {
     margin: 0 auto;
-    background-color: blue;
-    flex-grow: 1;
 }
 
 .image-section {
+    flex-basis: 100%;
+    background-color: blue;
+    padding: 100px;
+    align-items: center;
+    display: flex;
+}
 
-    
+.container {
+    padding: 20px;
+    background-color: #1F2937;
 }
