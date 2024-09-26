@@ -4,13 +4,13 @@
     padding: 0;
 }
 
-.header {
+.header, .footer {
     background-color: #1F2937;
 }
 
 .logo {
     color: #F9FAF8;
-    size: 24px;
+    font-size: 24px;
 }
 
 .navbar {
@@ -36,13 +36,32 @@ a {
     align-items: center;
     justify-content: space-between;    
     height: 300px;
+    margin-top: 5rem;
     
+}
+
+p {
+    /* padding: 5px;
+    margin: 5px; */
+    font-size: 18px;
+    color: #E5E7EB
+}
+
+button {
+    background-color: #3882f6;
+    padding: 10px;
+    margin-top: 5px;
+    color: #E5E7EB
+}
+
+h1 {
+    font-size: 48px;
+    font-weight: 900;
 }
 
 .sign-up {
     flex-direction: column;
     flex-basis: 100%;
-
 }
 
 .placeholder {
@@ -51,13 +70,40 @@ a {
 
 .image-section {
     flex-basis: 100%;
-    background-color: blue;
-    padding: 100px;
+    background-color: gray;
+    padding: 6rem;
     align-items: center;
     display: flex;
 }
 
 .container {
-    padding: 20px;
+    padding: 2rem 10rem;
     background-color: #1F2937;
+}
+
+h2 {
+    text-align: center;
+    padding: 3rem;
+    font-weight: 900;
+    font-size: 3rem;
+}
+
+.boxes {
+    display: flex;
+}
+
+.box {
+    border-radius: 2px;
+    border-style: solid;
+    border-color: blue;
+    width: 200px;
+    height: 200px;
+    justify-content: space-around;
+    margin: 0 auto;
+    border-radius: 25px;
+    
+}
+
+.subtext {
+    color: black;
 }
